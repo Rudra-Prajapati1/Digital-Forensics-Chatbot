@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Forensics Assistant - IBM Internship</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="chat-container">
+        <div class="chat-header">
+          <div class="chat-avatar">DF</div>
+          <div class="chat-info">
+            <div class="chat-name">
+              Digital Forensics Investigation Assistant
+            </div>
+            <div class="chat-status">
+              <span class="status-dot"></span>
+              Powered by Google Gemini API - Free Tier
+            </div>
+          </div>
+          <div class="header-badge">Focused AI</div>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+          <div class="date-chip">Today</div>
+
+          <div class="message-row bot-row">
+            <div class="msg-avatar bot-avatar">DF</div>
+            <div class="bubble bot-bubble">
+              <p class="welcome-title">
+                Digital Forensics Investigation Assistant
+              </p>
+              <p class="welcome-text">
+                Ask focused questions about digital forensics concepts, tools,
+                workflows, evidence handling, and related legal or incident
+                response topics.
+              </p>
+              <ul class="welcome-list">
+                <li>Digital Evidence &amp; Forensic Investigation</li>
+                <li>Forensic Tools (Autopsy, Wireshark, Volatility...)</li>
+                <li>Network, Mobile &amp; Memory Forensics</li>
+                <li>Malware Analysis &amp; Incident Response</li>
+                <li>Legal Aspects, IT Act 2000, CERT-In</li>
+              </ul>
+              <p class="welcome-note">
+                This assistant is limited to <strong>digital forensics</strong>
+                and should decline unrelated topics.
+              </p>
+              <span class="msg-time" id="welcome-time"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-input-area">
+          <textarea
+            id="user-input"
+            class="input-box"
+            rows="1"
+            placeholder="Ask a digital forensics question... (Enter to send)"
+          ></textarea>
+          <button id="send-btn" class="send-btn" title="Send message">
+            <svg viewBox="0 0 24 24" fill="white" width="20" height="20">
+              <path d="M2 21l21-9L2 3v7l15 2-15 2z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="disclaimer">
+          Digital Forensics scope only &nbsp;|&nbsp; IBM Internship 2025-26
+          &nbsp;|&nbsp; Gemini 2.5 Flash via Google AI Studio
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
