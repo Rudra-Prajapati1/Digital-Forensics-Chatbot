@@ -6,7 +6,7 @@
     <title>Digital Forensics Assistant - IBM Internship</title>
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='style.css') }}"
+      href="{{ url_for('static', filename='Style.css') }}"
     />
   </head>
   <body>
@@ -20,7 +20,7 @@
             </div>
             <div class="chat-status">
               <span class="status-dot"></span>
-              Powered by Google Gemini API - Free Tier
+              Powered by Groq API
             </div>
           </div>
           <div class="header-badge">Focused AI</div>
@@ -48,8 +48,8 @@
                 <li>Legal Aspects, IT Act 2000, CERT-In</li>
               </ul>
               <p class="welcome-note">
-                This assistant is limited to <strong>digital forensics</strong>
-                and should decline unrelated topics.
+                This assistant focuses on <strong>digital forensics</strong>
+                and gently redirects unrelated topics.
               </p>
               <span class="msg-time" id="welcome-time"></span>
             </div>
@@ -72,11 +72,11 @@
 
         <div class="disclaimer">
           Digital Forensics scope only &nbsp;|&nbsp; IBM Internship 2025-26
-          &nbsp;|&nbsp; Gemini 2.5 Flash via Google AI Studio
+          &nbsp;|&nbsp; llama-3.3-70b-versatile via Groq API
         </div>
       </div>
     </div>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='Script.js') }}"></script>
   </body>
 </html>
