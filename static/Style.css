@@ -136,17 +136,6 @@ body {
   }
 }
 
-.header-badge {
-  background: rgba(84, 143, 196, 0.22);
-  color: #e8f4ff;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 7px 12px;
-  border-radius: 999px;
-  letter-spacing: 0.4px;
-  border: 1px solid rgba(180, 214, 243, 0.22);
-}
-
 /* ---- MESSAGES AREA ---- */
 .chat-messages {
   flex: 1;
